@@ -8,3 +8,5 @@ Toggles state of emacs between doom and naked state with the help of doomify and
 ## xdpd.sh
 Wrapper script for hyprland
 
+## update.sh
+A global update script to handle updates from cargo, rustup, arch-repos, doom
