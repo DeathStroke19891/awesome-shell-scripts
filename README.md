@@ -16,3 +16,6 @@ Move completed or abandoned projects into the archive folder and fix broken link
 
 ## recorder.sh and screenshot.sh
 A wofi menu script which captures recording of screen with or without microphone and another script which takes different types of screenshot based on the available options ( active, screen, area )
+
+## pass.sh
+A wofi menu script which allows you to generate and encrypt random passwords using pass and allows you to copy them to clipboard, so that you don't have to go through the hassle of remembering or copying passwords from somewhere else.
