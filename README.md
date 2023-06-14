@@ -1,3 +1,5 @@
+**This github repo is a mirror link to my gitea instance running on my server**
+
 # awesome-shell-scripts
 
 My awesome shell-scripts
