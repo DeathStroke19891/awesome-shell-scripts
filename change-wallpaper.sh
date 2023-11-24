@@ -2,8 +2,17 @@
 
 set -e 
 
-files=(~/Pictures/Wallpapers/*)
 
-randomfile=$(printf "%s\n" "${files[RANDOM % ${#files[@]}]}")
+file=$1
 
-swww img $randomfile --resize fit
+if [[ $file == "" ]]
+    then
+    files=(~/Pictures/Wallpapers/*)
+    randomfile=$(printf "%s\n" "${files[RANDOM % ${#files[@]}]}")
+
+    wal -i $randomfile
+    swww img $randomfile --resize fit
+    else
+    wal -i $file
+    swww img $file --resize fit 1> /dev/null
+fi

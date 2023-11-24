@@ -12,7 +12,7 @@ elif [[ $a == "copy password" ]]; then
     fi
     pass show -c $b
     sleep 1
-    notify-send "The password at $b has been copied to your clipboard"
+    notify-send -t 6000 "The password at $b has been copied to your clipboard"
 elif [[ $a == "generate password" ]]; then
     b=$(wofi -p "Select the directory where the password has to be stored" -d)
     if [[ $b == "" ]]; then
@@ -22,7 +22,7 @@ elif [[ $a == "generate password" ]]; then
     sleep 1
     pass show -c $b
     sleep 1
-    notify-send "A password has been generated at $b and has been copied to your clipboard"
+    notify-send -t 6000 "A password has been generated at $b and has been copied to your clipboard"
 else
     b=$(wofi -p "Select the directory where the password has to be inserted" -d)
     if [[ $b == "" ]]; then
@@ -30,5 +30,5 @@ else
     fi
     pass insert $b
     sleep 1
-    notify-send "A password has been inserted at $b"
+    notify-send -t 6000 "A password has been inserted at $b"
 fi
